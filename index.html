@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Audio file upload test</title>
+  </head>
+  <body>
+    <form action="/uploadtrack?subscribed=true" enctype="multipart/form-data" method="POST">
+      <input type="file" name="track" />
+      <input type="submit" value="Upload audio track as a subscribed user" />
+    </form>
+
+    <form action="/uploadtrack?subscribed=false" enctype="multipart/form-data" method="POST">
+      <input type="file" name="track" />
+      <input type="submit" value="Upload audio track as an anonymous user (trial)" />
+    </form>
+  </body>
+</html>
